@@ -49,7 +49,7 @@
 | 配置项                                    | 说明                                                         | 类型                   | 默认值            |
 | ----------------------------------------- | ------------------------------------------------------------ | ---------------------- | ----------------- |
 | authz.user.maximum-total-device           | 登录设备总数默不做限制【-1为不做限制，最小为1】，超出会挤出最长时间未访问的设备。 | int                    | -1                |
-| authz.user.maximum-total-same-type-device | 相当于typesTotal对所有的类型添加一个设备数量限制，会被typesTotal覆盖。 同类型设备最大登录数 默认 1个【-1为不做限制，最小为1】，超出会挤出最长时间未访问的设备。 | int                    | 1                 |
+| authz.user.maximum-total-same-type-device | 相当于typesTotal对所有的类型添加一个设备数量限制，会被typesTotal覆盖。 同类型设备最大登录数 默认不做限制（1.2.7之前为限制1个）【-1为不做限制，最小为1】，超出会挤出最长时间未访问的设备。 | int                    | 1                 |
 | authz.user.types-total                    | 每[一种、多种]设备类型设置[共同]的最大登录数（最小为1），超出会挤出最长时间未访问的设备。 | List\<DeviceCountInfo> | new ArrayList<>() |
 
 ## Dashboard配置

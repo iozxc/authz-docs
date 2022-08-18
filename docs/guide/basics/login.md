@@ -87,9 +87,13 @@ public IssueToken login(@RequestBody User user) {
 
 ### 2.2 绑定<u>设备类型</u>（操作系统、平台）等
 
-```java{2}
+```java{2-6}
 if (userId > 0) {
-	return AuHelper.login(userId, "macOS");
+	return AuHelper.login(userId, "Mac");
+	// 或者 
+	// AuHelper.login(userId, AuHelper.getPlatform().getName(), null);
+	// AuHelper.getPlatform().getName() <==> 获取当前请求的平台名称，
+	// 有iPhone、iPad、Android、Mac、Windows等
 } else {
 	return null;
 }
@@ -103,9 +107,9 @@ if (userId > 0) {
 
 如：
 
-有macOS设备类的且设备id为ABCD的设备
+Mac端的设备、且设备id为ABCD的设备
 
-有macOS设备类的且设备id为EFGH的设备
+Mac端的设备、且设备id为EFGH的设备
 
 设备id为ABCD的设备可能处于安卓设备类型下也可能处于自定义的设备类型如qq、微信等。
 
@@ -115,7 +119,9 @@ if (userId > 0) {
 
 ```java{2}
 if (userId > 0) {
-	return AuHelper.login(userId, "macOS", "FFFFFFFF-FFFF-FFFF");
+	return AuHelper.login(userId, "Mac", "FFFFFFFF-FFFF-FFFF");
+	// 或者 AuHelper.login(userId, AuHelper.getPlatform().getName(), null);
+	// 或者 AuHelper.login(userId, AuHelper.getOS().getName(), null);
 } else {
 	return null;
 }

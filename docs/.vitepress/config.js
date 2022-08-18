@@ -11,6 +11,7 @@ export default {
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: '/logo.png'} ],
+    ['script', { src: '/log.js'} ]
   ],
   themeConfig: {
     outlineTitle: 'On this page',
@@ -31,7 +32,7 @@ export default {
       { text: '文档', link: '/guide/introduction' },
       { text: '关于', link: '/team' },
       {
-        text: 'Authz-1.2.6',
+        text: 'Authz-1.2.7',
         items: [
           { text: 'Changelog', link: 'https://github.com/iozxc/authz-spring-boot-starter/blob/master/CHANGELOG.md' },
         ]
