@@ -55,9 +55,9 @@ public interface OpenAuthLibrary extends AuthorizationCallback {
 
 
 
-## 2. 授权成功、删除授权、授权时的回调接口函数
+## 2. 授权成功、删除授权、授权时的回调方法
 
-只需要实现此接口，并将其注入Spring，便能监听回调函数
+只需要实现此接口，并将其注入Spring，便能实现回调方法
 
 ```java{9,16,26}
 @FunctionalInterface
