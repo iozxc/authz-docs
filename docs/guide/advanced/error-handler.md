@@ -35,12 +35,10 @@ public class CustomAuthzExceptionHandler implements AuthzExceptionHandler {
       
         if (exceptionStatus.equals(ExceptionStatus.MISMATCHED_URL)) {
             // url不存在
-            return true;
+            return true; // 此错误不拦截
         }
 
-        HttpUtils.returnResponse(exceptionStatus.getHttpStatus(),
-                                 Result.of(firstExceptionStatus.getCode(), 
-                                 exceptionStatus.getMessage()));
+        HttpUtils.returnResponse(exceptionStatus.getHttpStatus(), exceptionStatus.data());
 
         return false;
     }
