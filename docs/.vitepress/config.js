@@ -80,7 +80,7 @@ export default {
             { text: '登录&登出🌟', link: '/guide/basics/login'},
             { text: '登录验证 & 登录拦截', link: '/guide/basics/validate-login'},
             { text: '设备管理🌟', link: '/guide/basics/device-control'},
-            { text: 'RBAC权限管理的开始 - PermLibrary', link: '/guide/basics/perm-library'},
+            { text: 'RBAC权限的开始 - PermLibrary', link: '/guide/basics/perm-library'},
             { text: 'API权限🌟', link: '/guide/basics/api-permission'},
             { text: '参数权限', link: '/guide/basics/param-permission'},
             { text: '数据权限', link: '/guide/basics/data-permission'},
