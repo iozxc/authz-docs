@@ -19,7 +19,7 @@
 
 
 
-```java
+```java{9,18,26}
 @RestController("openAuthController")
 @RequestMapping("/oauth")
 public class OAuthController {
@@ -61,7 +61,7 @@ public class OAuthController {
 
 :::
 
-```java
+```java{3,12}
 @RestController
 @RequestMapping("/oauth2")
 @OAuthScope("basic")
@@ -96,7 +96,7 @@ public class OAuthController2 {
 
 ### 3.1 通过参数的方式传递accessToken
 
-```java
+```java{3,4,13}
 @RestController
 @RequestMapping("/oauth2")
 @OAuthScope("basic")
@@ -124,7 +124,7 @@ public class OAuthController2 {
 
 ### 3.2 通过cookie的方式传递accessToken
 
-```java
+```java{3,4,13}
 @RestController
 @RequestMapping("/oauth2")
 @OAuthScope("basic")
@@ -150,7 +150,7 @@ public class OAuthController2 {
 
 ### 3.2 通过header的方式传递accessToken
 
-```java
+```java{3,4,13}
 @RestController
 @RequestMapping("/oauth2")
 @OAuthScope("basic")
