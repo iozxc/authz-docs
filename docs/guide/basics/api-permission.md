@@ -2,7 +2,9 @@
 
 [[toc]]
 
-
+::: tip 注意
+从此开始、之后的权限指的是RBAC权限
+:::
 
 这里的API权限通常指的是<span style='color: #9e880d'>@Mapping</span>**注解标记过的方法**的权限
 
