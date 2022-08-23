@@ -29,7 +29,7 @@
 | authz.token.access-time         | access token有效时间，默认 7d ，单位 ms                      | String  | 7d            |
 | authz.token.refresh-time        | refresh token有效时间，默认 30d ，单位 ms                    | String  | 30d           |
 | authz.token.logout-before-login | 在登录前退出，若某请求为申请登录的请求，并且此请求已经登录，那么会将之前的登录移除 | boolean | true          |
-| authz.token.bing-ip             | token是否绑定登录的ip。若请求ip与token绑定的ip不相同，token会立即失效 | boolean | false         |
+| authz.token.bind-ip             | token是否绑定登录的ip。若请求ip与token绑定的ip不相同，token会立即失效 | boolean | false         |
 
 ## Cache配置
 
