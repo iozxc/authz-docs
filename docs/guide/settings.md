@@ -19,8 +19,8 @@
 
 [查看具体使用](/guide/basics/login#_5-登录请求以及token配置（如何使用返回的token，token的过期时间）)
 
-| 配置项                          | 说明                                                         | 类型    | 默认值        |
-| ------------------------------- | ------------------------------------------------------------ | ------- | ------------- |
+| 配置项                             | 说明                                                         | 类型    | 默认值           |
+|---------------------------------| ------------------------------------------------------------ | ------- |---------------|
 | authz.token.key                 | 签名的私钥，若长度不够将自动以`.`填充，若为空，将不执行数字签名 | String  |               |
 | authz.token.tokenId-bits        | 登录标识的长度                                               | int     | 8             |
 | authz.token.cookie-name         | cookie name                                                  | String  | atkn          |
@@ -29,6 +29,7 @@
 | authz.token.access-time         | access token有效时间，默认 7d ，单位 ms                      | String  | 7d            |
 | authz.token.refresh-time        | refresh token有效时间，默认 30d ，单位 ms                    | String  | 30d           |
 | authz.token.logout-before-login | 在登录前退出，若某请求为申请登录的请求，并且此请求已经登录，那么会将之前的登录移除 | boolean | true          |
+| authz.token.bing-ip             | token是否绑定登录的ip。若请求ip与token绑定的ip不相同，token会立即失效 | boolean | false         |
 
 ## Cache配置
 
