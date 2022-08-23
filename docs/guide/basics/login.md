@@ -283,25 +283,25 @@ authz:
 IssueToken refreshToken(@NonNull String refreshToken) throws RefreshTokenExpiredException, TokenException
 ```
 
-刷新token的接口，可以用获得的accesstoken来刷新获得新的accessToken和refreshToken
+刷新token的接口，可以用accessToken来获得新的accessToken和refreshToken
 
 :::
 
 
 
-注意此refreshToken刷新后将失效，也就是说它是一次性的，刷新后还是会获得如上格式的结果。两个token和一个accessToken过期时间。其中**expiresIn不会改变(获得的新accessToken还是1天过期)**，**且并不会延长refreshToken的时间(还是30天后过期)**
+注意此refreshToken刷新后将失效，也就是说它是一次性的，刷新后还是会获得如上格式的结果，两个token和一个accessToken过期时间。其中**expiresIn不会改变(获得的新accessToken还是1天过期)**，**且并不会延长refreshToken的时间**
 
 ```json
 {
     "accessToken": "...",
     "refreshToken": "...",
-    "expiresIn": 86400000 # 1天过期
+    "expiresIn": 86400000 
 }
 ```
 
 ### 5.2 单Token模式
 
-如果不需要刷新accessToken，也就是只需要用一个token就够了，那么可以把accessToken的时间和refreshToken的时间设置为一样的
+如果不需要刷新accessToken，也就是只需要用一个token就够了，那么可以把accessToken的时间和refreshToken的有效时间设置为一样即可。
 
 ```yaml{4-5}
 authz:
@@ -310,9 +310,6 @@ authz:
     access-time: 30d
     refresh-time: 30d
 ```
-
-那么这样也就没有刷新的意义了。因为accessToken和refreshToken的有效时间都是一样的
-
 
 
 ### 5.3 cookie携带token
@@ -348,6 +345,29 @@ authz:
     key: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     header-name: 'your header name'
     header-prefix: 'your header prefix'
+```
+
+#### 5.5 AuthRequestToken、参数携带token
+
+利用`AuthRequestToken`可以实现参数携带token，同时也支持上面两种
+
+在请求时，在后面带上参数
+
+如 `~/admin/check?参数名={拿到的accessToken}`
+
+```java{3,6}
+@RestController
+@RequestMapping("/admin")
+@AuthRequestToken("参数名") // <==> @AuthRequestToken(param = "参数名")
+public class OAuthController2 { 
+
+    @AuthRequireLogin
+    @GetMapping("/check")
+    public String check() {
+        return "ok";
+    }
+  
+}
 ```
 
 
