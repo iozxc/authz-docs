@@ -22,7 +22,7 @@
 | 配置项                             | 说明                                                         | 类型    | 默认值           |
 |---------------------------------| ------------------------------------------------------------ | ------- |---------------|
 | authz.token.key                 | 签名的私钥，若长度不够将自动以`.`填充，若为空，将不执行数字签名 | String  |               |
-| authz.token.tokenId-bits        | 登录标识的长度                                               | int     | 8             |
+| authz.token.token-id-bits        | 登录标识的长度                                               | int     | 8             |
 | authz.token.cookie-name         | cookie name                                                  | String  | atkn          |
 | authz.token.header-name         | header name                                                  | String  | authorization |
 | authz.token.header-prefix       | prefix 例如：headerPrefix = 'Bearer' -> "Bearer  " headerPrefix不需要在最后空格，但是在请求时需要空一格 | String  | Bearer        |
