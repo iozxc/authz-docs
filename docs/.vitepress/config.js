@@ -53,7 +53,7 @@ export default {
       { text: '文档', link: '/guide/introduction' },
       { text: '关于', link: '/team' },
       {
-        text: 'Authz-1.2.8',
+        text: 'Authz-1.2.9',
         items: [
           { text: 'Changelog', link: 'https://github.com/iozxc/authz-spring-boot-starter/blob/master/CHANGELOG.md' },
         ]
