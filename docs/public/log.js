@@ -1,12 +1,9 @@
-let param = document.referrer? `?referrer=${document.referrer}` : ''
-let url = `http://authz.omisheep.cn/web/website-log${param}`
-
 const weblog = async () => {
   try {
-    await fetch(url)
+    await fetch(`http://authz.omisheep.cn/web/website-log${document.referrer? `?referrer=${document.referrer}` : ''}`)
   } catch (err) {
     // pass
   }
 }
 
-weblog()
+weblog().then(r => {})
