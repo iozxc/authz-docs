@@ -108,18 +108,3 @@ authz:
     allow: "xx.xx.xx.xx/xx" # 只允许ip属于此网段的用户访问
     deny:  "xx.xx.xx.xx/xx" # 不允许ip属于此网段的用户访问
 ```
-
-
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>

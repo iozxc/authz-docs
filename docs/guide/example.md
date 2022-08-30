@@ -235,16 +235,3 @@ get http://localhost:8080/visit-not-login
 
 测试时若使用Postman、Apifox、Chrome浏览器等可用存储cookie的请求工具，那么在登录之后，并不需要做其他操作，因为默认会把登录的信息放在cookie里。当然也可以利用header来请求，把accessToken放在header中，具体请看 [登录&登出](/guide/basics/login) 
 :::
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>

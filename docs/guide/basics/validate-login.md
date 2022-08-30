@@ -141,21 +141,3 @@ public class BillService extends ServiceImpl<BillMapper, Bill> implements IBillS
 成功拦截未登录用户时，给出的异常状态码为 <span class='error-code'>REQUIRE_LOGIN</span>，具体查看[自定义错误拦截器](/guide/advanced/error-handler)
 
 :::
-
-<style>
-  .error-code{
-    color: red;
-    font-weight: 700;
-  }
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>

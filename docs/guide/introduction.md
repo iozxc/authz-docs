@@ -107,20 +107,3 @@ public class Service  {
 当然大多情况只需要<span style='color: #ce7171'>登录判断</span>，但是某些系统也需要<span style='color: #ce7171'>权限判断</span>，所以会和@Roles或者@Auth等权限注解一起使用（后续会介绍）。而不是单纯的使用`@AuthRequireLogin`。所以下面将会逐一详细的介绍这些功能和使用方法。
 
 :::
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-  summary {
-   cursor: pointer;
-    user-select: none; 
-  }
-</style>

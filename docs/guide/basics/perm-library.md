@@ -126,19 +126,3 @@ public class UserPermLibrary implements PermLibrary<Integer> {
 所以:
 <span style='color: #ff6565'>在PermLibrary里面的getRolesByUserId和getPermissionsByRole方法中，所有的数据权限都将失效。</span>
 
-
-
-
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>

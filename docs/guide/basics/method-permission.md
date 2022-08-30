@@ -1,6 +1,6 @@
 # 方法权限
 
-方法权限类似于接口权限，在任意的bean上或者bean中任意的方法上添加：<span style='color: #9e880d'>@AuthRequireLogin</span> 、<span style='color: #9e880d'>@Auth</span> 、<span style='color: #9e880d'>@Roles</span> 、<span style='color: #9e880d'>@Perms</span> 就可以给方法添加上权限。
+方法权限类似于接口权限，在任意的bean上或者bean中任意的方法上添加：<span class="annotation">@AuthRequireLogin</span> 、<span class="annotation">@Auth</span> 、<span class="annotation">@Roles</span> 、<span class="annotation">@Perms</span> 就可以给方法添加上权限。
 
 ```java{1,8}
 @AuthRequireLogin
@@ -32,20 +32,3 @@ public class WebExceptionHandler {
   
 }
 ```
-
-
-
-
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>

@@ -491,17 +491,3 @@ AuHelper.addDeviceTypesTotalLimit(1, Arrays.asList("Pad", "Phone"), 2);
 每当一个新的设备登录，若此设备触发了上述的规则，那么并不是最先登录的下线，而是按最近访问时间依此踢出访问时间最早的设备。
 
 :::
-
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>

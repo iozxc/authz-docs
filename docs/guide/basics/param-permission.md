@@ -48,23 +48,9 @@ public Result operate(@BatchAuthParam({
 
 ## 2.2 参数权限的补充说明
 
-1. 其中<span style='color: #9e880d'>@AuthParam</span> 和 <span style='color: #9e880d'>@BatchAuthParam</span> 只能作用于接口的参数上才会生效
+1. 其中<span class="annotation">@AuthParam</span> 和 <span class="annotation">@BatchAuthParam</span> 只能作用于接口的参数上才会生效
 
-2. 当需要多个<span style='color: #9e880d'>@AuthParam</span>时可以用<span style='color: #9e880d'>@BatchAuthParam</span> 进行包裹
+2. 当需要多个<span class="annotation">@AuthParam</span>时可以用<span class="annotation">@BatchAuthParam</span> 进行包裹
 
 3. resources的级别大于range，见示例1，因为【id=177】需要**role**:【admin】的权限，关系强于 > **role**:【zxc】时只能访问【#{id}-156】和【177】。所以在配置了resources时，其他的配置的range可能会失效
 
-
-
-<style>
-  :root{
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e7cb7f, #d65454);
-
-    --vp-c-brand: #fb8732;
-    --vp-c-brand-light: #fb8732;
-    --vp-c-brand-lighter: #ff7727;
-    --vp-c-brand-dark: #fb8732;
-    --vp-c-brand-darker: #ff7727;
-  }
-</style>
