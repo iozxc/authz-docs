@@ -68,7 +68,7 @@ authz:
 public boolean login(String username, String password) {
   // 自定义认证方式
   if ("authz".equals(username) && "authz".equals(password)){
-    AuHelper.login(1); // 用户id为1，这里的id为全局唯一
+    AuHelper.login(1); // 用户id为1，此id全局唯一
     return true;
   } else {
     return false;
