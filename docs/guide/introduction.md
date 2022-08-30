@@ -42,7 +42,7 @@ authz:
     key: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 ```
 
-#### 启用了redis
+#### 启用了redis（微服务）
 
 ```yaml
 spring:
