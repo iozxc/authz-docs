@@ -1,35 +1,27 @@
-var _ok
-var _refer
-var _href
+var _path_refer
+var _path_src
 
 var weblog
 if (!weblog) {
-    _href = window.location.pathname
-    _refer = null
+    _path_src = window.location.pathname
+    _path_refer = null
     weblog = async () => {
         try {
             await fetch('http://authz.omisheep.cn/web/website-log', {
                 method: 'GET',
                 headers: {
-                    'path-src': _href,
-                    'path-refer': _refer
+                    'path-src': _path_src,
+                    'path-refer': _path_refer
                 }
             })
         } catch (err) {
             // pass
         }
     }
-    weblog().then(r => {
-    })
-} else {
-    weblog().then(r => {
-    })
-}
 
-if (!_ok) {
     window.addEventListener('popstate', function (event) {
-        _refer = _href
-        _href = window.location.pathname
+        _path_refer = _path_src
+        _path_src = window.location.pathname
         weblog().then(r => {
         })
     })
@@ -48,12 +40,13 @@ if (!_ok) {
     history.replaceState = _historyWrap('replaceState');
 
     window.addEventListener('pushState', function (e) {
-        _href = window.location.pathname
+        _path_src = window.location.pathname
         weblog().then(r => {
         })
     });
     window.addEventListener('replaceState', function (e) {
-        _refer = window.location.pathname
+        _path_refer = window.location.pathname
     });
-    _ok = true
 }
+
+
