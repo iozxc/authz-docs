@@ -18,7 +18,11 @@ Authz （Authorization **授权**） 是一套**权限安全框架**，同时支
 
 ### Maven
 
-> https://search.maven.org/search?q=authz-spring-boot-starter
+::: info 版本查询
+[在maven中心仓库查询](https://search.maven.org/search?q=authz-spring-boot-starter)
+
+[在github中查询](https://github.com/iozxc/authz-spring-boot-starter)
+:::
 
 ```xml
 <dependency>
