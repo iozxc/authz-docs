@@ -79,7 +79,7 @@ public boolean login(String username, String password) {
 ### 登录验证
 
 ```java{2}
-// 在需要验证登录的方法上加上 @AuthRequireLogin 或者 @Certificated 两者等效
+// 在需要验证登录的方法上加上 @AuthRequireLogin
 @AuthRequireLogin //注意只在web环境有效，也就是每次请求之后调用此方法
 public String checkLogin() {
   System.out.println("ok"); // 某请求调用此方法，若此次请求未登录，那么将不会打印 ok 且会返回错误json
