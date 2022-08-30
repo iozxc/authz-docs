@@ -30,7 +30,7 @@ public class User {
 
 
 
-其中的**username字段**以及email字段不想让非admin用户查看，可以利用<span style='color: #9e880d'>@AuthField</span>
+其中的**username字段**以及email字段不想让非admin用户查看，可以利用<span class="annotation">@AuthField</span>
 
 ```java{8,10}
 @Data
@@ -104,7 +104,7 @@ public class User {
 ## 2. 某字段只有登录才能查看
 
 
-同理，若不想让非登录用户看到avatar字段，可以将<span style='color: #9e880d'>@AuthField</span>无参的直接添加在字段上，如下
+同理，若不想让非登录用户看到avatar字段，可以将<span class="annotation">@AuthField</span>无参的直接添加在字段上，如下
 
 ```java{8,10,13}
 @Data
