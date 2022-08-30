@@ -4,7 +4,7 @@
 
 ## 什么是Authz
 
-Authz （Authorization **授权**） 是一套**权限安全框架**，同时支持设备管理。它简化了配置，有简洁的sdk，内部实现了一套<span style='color: #ce7171'>双层同步缓存</span>，在性能上也表现出色。支持微服务、支持<span style='color: #ce7171'>RBAC的权限验证</span>、支持<span style='color: #ce7171'>API权限</span>、<span style='color: #ce7171'>API参数权限</span>、<span style='color: #ce7171'>数据权限</span>、<span style='color: #ce7171'>字段权限</span>、方法权限等权限管理。有用户设备的登录 & 退出 & 封禁 & 登录数量限制 & 查看在线人数等，ip限制，网段限制 & RateLimit 等功能。与此同时支持<span style='color: #ce7171'>动态权限</span>，且自带Dashboard（可以在Dashboard里动态的修改API、参数权限等权限和一些设备、黑名单操作）。
+Authz （Authorization **授权**） 是一套**权限安全框架**，同时支持设备管理。它简化了配置，有简洁的sdk，内部实现了一套<span style='color: #ce7171'>双层同步缓存</span>，在性能上表现出色。支持微服务、支持<span style='color: #ce7171'>RBAC的权限验证</span>、支持<span style='color: #ce7171'>API权限</span>、<span style='color: #ce7171'>API参数权限</span>、<span style='color: #ce7171'>数据权限</span>、<span style='color: #ce7171'>字段权限</span>、方法权限等权限管理。有用户设备的登录 & 退出 & 封禁 & 登录数量限制 & 查看在线人数等，ip限制，网段限制 & RateLimit 等功能。与此同时支持<span style='color: #ce7171'>动态权限</span>，且自带Dashboard（可以在Dashboard里动态的修改API、参数权限等权限和一些设备、黑名单操作）。
 
 
 
