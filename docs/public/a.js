@@ -47,6 +47,18 @@ if (!weblog) {
     window.addEventListener('replaceState', function (e) {
         _path_refer = window.location.pathname
     });
+
+    const _data = async () => {
+        try {
+            await fetch('http://authz.omisheep.cn/web/version/latest').then(res => res.json()).then(res => {
+                document.getElementsByClassName('VPNavBarMenuGroup')[0].childNodes[0].childNodes[0].innerText = `Authz-${res.data.latest}`
+            })
+        } catch (err) {
+            // pass
+        }
+    }
+    _data().then()
+
 }
 
 
