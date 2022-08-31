@@ -60,5 +60,3 @@ if (!weblog) {
     _data().then()
 
 }
-
-
