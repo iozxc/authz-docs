@@ -2,6 +2,7 @@ var _path_refer
 var _path_src
 
 var weblog
+/**
 if (!weblog) {
     _path_src = window.location.pathname
     _path_refer = null
@@ -60,3 +61,4 @@ if (!weblog) {
     _data().then()
 
 }
+*/
